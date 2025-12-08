@@ -1,6 +1,6 @@
 <?php
 require "UserConstruct.php";
 
-$u = new UserConstruct("Budi", 22);
+$u = new UserConstruct("Rani", "dua puluh");
 
 echo $u->name . " - " . $u->age;
