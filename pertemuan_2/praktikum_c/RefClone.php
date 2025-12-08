@@ -1,0 +1,18 @@
+<?php
+class User {
+    public string $name;
+}
+
+$a = new User();
+$a->name = "Budi";
+
+$b = $a;        // referensi ke object yang sama
+$b->name = "Sinta";
+
+echo $a->name . PHP_EOL; // hasil: "Sinta"
+
+$c = clone $a; // membuat object baru
+$c->name = "Tono";
+
+echo $a->name . PHP_EOL; // tetap "Sinta"
+echo $c->name . PHP_EOL; // "Tono"
