@@ -2,6 +2,6 @@
 
 // test perubahan untuk commit gitgit status
 $hargaProduk3 = 50000;
-$total3 = $hargaProduk3 + ($hargaProduk3 * 0.11);
+$total3 = $hargaProduk3 + ($hargaProduk3 * 0.10);
 
 echo "Total3: $total3\n";
