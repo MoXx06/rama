@@ -1,6 +1,7 @@
 <?php
 class User {
     public string $name;
+    public int $age;
 }
 
 $a = new User();
