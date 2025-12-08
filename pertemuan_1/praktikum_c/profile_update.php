@@ -17,5 +17,5 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 if ($errors) {
     print_r($errors);
 } else {
-    echo "Update profile berhasil!";
+    echo "Update profile berhasil!";
 }
