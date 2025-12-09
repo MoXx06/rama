@@ -6,15 +6,13 @@ class Account {
         return $this->balance;
     }
 
-    public function setBalance(float $amount): void {
-        if ($amount >= 0) {
-            $this->balance = $amount;
-        } else {
-            throw new InvalidArgumentException("Saldo tidak boleh negatif");
-        }
-    }
+public function setBalanceRaw(float $amount): void {
+    $this->balance = $amount; // Tanpa pengecekan!
+}
+
 }
 
 $acc = new Account();
-$acc->setBalance(50000);
+$acc->setBalanceRaw(-20000);
 echo $acc->getBalance();
+
